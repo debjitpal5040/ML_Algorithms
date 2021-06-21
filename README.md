@@ -1,2 +1,2 @@
 # ML_Algoritms
- Repository for Machine Learning Algorithms
+This is a repository for Machine Learning Algorithms.
