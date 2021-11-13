@@ -23,6 +23,7 @@ Now, after training, we test our model using the test set, and the task of the m
 
 The machine is already trained on all types of shapes, and when it finds a new shape, it classifies the shape on the bases of a number of sides, and predicts the output.
 
+## Types of Supervised Learning Algorithm
 Regression and Classification algorithms are both Supervised Learning algorithms. Both the algorithms are used for prediction in Machine learning and work with the labeled datasets. But the difference between both is how they are used for different machine learning problems.
 
 <img width="427" alt="Screenshot 2021-11-13 at 13 47 06" src="https://user-images.githubusercontent.com/76846542/141611522-7ba0d150-4210-4fb2-8fae-92ebc62a3252.png">
