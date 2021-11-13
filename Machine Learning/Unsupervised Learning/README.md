@@ -6,7 +6,9 @@ As the name suggests, unsupervised learning is a machine learning technique in w
 
 Unsupervised learning cannot be directly applied to a regression or classification problem because unlike supervised learning, we have the input data but no corresponding output data. <b>The goal of unsupervised learning is to find the underlying structure of dataset, group that data according to similarities, and represent that dataset in a compressed format.</b>
 
-## How Supervised Learning Works
+<b>Unsupervised learning can be used for those cases where we have only input data and no corresponding output data. The goal of unsupervised learning is to find the hidden patterns and useful insights from the unknown dataset.</b>
+
+## How Unsupervised Learning Works
 
 <img width="646" alt="Screenshot 2021-11-13 at 14 12 35" src="https://user-images.githubusercontent.com/76846542/141612207-3b482975-c1c9-402f-801b-f989e30754eb.png">
 
