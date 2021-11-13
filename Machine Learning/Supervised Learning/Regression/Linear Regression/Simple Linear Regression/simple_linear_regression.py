@@ -20,34 +20,31 @@ import matplotlib.pyplot as plt # data plotting
 
 """## Importing the csv file as a DataFrame"""
 
-df = pd.read_csv("Brain-Body.csv")
+df = pd.read_csv("Salary_Data.csv")
 df.head()
 
 """## Now taking 2 parts from the dataset
-### X : which contains only the <b>Brain Weight</b> column<br>y : which contains only the <b>Body Weight</b> column 
+### X : which contains only the <b>YearsExperience</b> column<br>y : which contains only the <b>Salary</b> column 
 """
 
-X = df.loc[:,["Brain Weight"]]
-y = df.loc[:,["Body Weight"]]
-print("//Independent feature//")
-print(X.head())
-print("\n\n//Dependent feature//")
-print(y.head())
+X = df.iloc[:, :-1].values
+y = df.iloc[:, -1].values
 
 """## Visualization of the data"""
 
 plt.figure(figsize=(8, 6),dpi=150)
-brains = df['Brain Weight']
-bodies = df['Body Weight']
-plt.scatter(brains,bodies, label ="Data")
-plt.title("Brain Weight vs Body Weight")
-plt.xlabel("Brain Weight(Kg)")
-plt.ylabel("Body Weight(Kg)")
-plt.legend(loc="upper left")
+YearsExperience = df['YearsExperience']
+Salary = df['Salary']
+plt.scatter(YearsExperience,Salary)
+plt.xticks(np.arange(1, 12, 1))
+plt.yticks(np.arange(37000,128000,10000))
+plt.title("Years of Experience vs Salary")
+plt.xlabel("Years of Experience")
+plt.ylabel("Salary")
 
 """## Split the <b>X</b> and <b>y</b> Dataframes for Test and Training"""
 
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.4,random_state=42)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=1/3,random_state=0)
 
 """## Implementation of the Model"""
 
@@ -60,15 +57,30 @@ y_pred = reg.predict(X_test)
 # Printing the coefficient of determination of the regression
 print("The coefficient of determination :", r2_score(y_test,y_pred))
 
-"""## Plotting the Regression"""
+"""## Plotting the Regression
+
+### Training Dataset
+"""
 
 plt.figure(figsize=(8, 6), dpi=150)
-plt.scatter(X_test,y_test,color='blue', label="data")
-plt.plot(X_test,y_pred,color='red',label="test")
-plt.title('Brain Weight vs Body Weight (Test Dataset)')
-plt.xlabel('Brain Weight (Kg)')
-plt.ylabel('Body Weight (Kg)')
-plt.legend()
+plt.scatter(X_train,y_train,color='red')
+plt.plot(X_train,reg.predict(X_train),color='blue')
+plt.xticks(np.arange(1, 12, 1))
+plt.yticks(np.arange(37000,128000,10000))
+plt.title('Salary vs Experience (Training set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+
+"""### Test Dataset"""
+
+plt.figure(figsize=(8, 6), dpi=150)
+plt.scatter(X_test, y_test, color = 'red')
+plt.plot(X_train, reg.predict(X_train), color = 'blue')
+plt.xticks(np.arange(1, 12, 1))
+plt.yticks(np.arange(37000,128000,10000))
+plt.title('Salary vs Experience (Test set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
 
 """## Additional Performance Metrics"""
 
