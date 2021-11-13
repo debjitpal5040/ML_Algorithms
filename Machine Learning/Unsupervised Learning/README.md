@@ -8,6 +8,7 @@ Unsupervised learning cannot be directly applied to a regression or classificati
 
 ## How Supervised Learning Works
 
+<img width="646" alt="Screenshot 2021-11-13 at 14 12 35" src="https://user-images.githubusercontent.com/76846542/141612207-3b482975-c1c9-402f-801b-f989e30754eb.png">
 
 Here, we have taken an unlabeled input data, which means it is not categorized and corresponding outputs are also not given. Now, this unlabeled input data is fed to the machine learning model in order to train it. Firstly, it will interpret the raw data to find the hidden patterns from the data and then will apply suitable algorithms such as k-means clustering, Decision tree, etc.
 
@@ -16,6 +17,7 @@ Once it applies the suitable algorithm, the algorithm divides the data objects i
 ## Types of Unsupervised Learning Algorithm
 The unsupervised learning algorithm can be further categorized into two types of problems:
 
+<img width="419" alt="Screenshot 2021-11-13 at 14 13 03" src="https://user-images.githubusercontent.com/76846542/141612216-890ce622-637a-4420-a3b8-c3ddb00cdd7c.png">
 
 ### Clustering
 Clustering is a method of grouping the objects into clusters such that objects with most similarities remains into a group and has less or no similarities with the objects of another group. Cluster analysis finds the commonalities between the data objects and categorizes them as per the presence and absence of those commonalities.
