@@ -7,7 +7,25 @@ Supervised learning is a process of providing input data as well as correct outp
 
 In the real-world, supervised learning can be used for Risk Assessment, Image classification, Fraud Detection, spam filtering, etc. 
 
+## How Supervised Learning Works
+In supervised learning, models are trained using labelled dataset, where the model learns about each type of data. Once the training process is completed, the model is tested on the basis of test data (a subset of the training set), and then it predicts the output.
+
+The working of Supervised learning can be easily understood by the below example and diagram:
+
+<img width="693" alt="Screenshot 2021-11-13 at 13 48 43" src="https://user-images.githubusercontent.com/76846542/141611574-cfaa4d6c-8d8d-4f1f-8590-cda97c8920da.png">
+Suppose we have a dataset of different types of shapes which includes square, rectangle, triangle, and Polygon. Now the first step is that we need to train the model for each shape.
+
+    If the given shape has four sides, and all the sides are equal, then it will be labelled as a Square.
+    If the given shape has three sides, then it will be labelled as a triangle.
+    If the given shape has six equal sides then it will be labelled as hexagon.
+
+Now, after training, we test our model using the test set, and the task of the model is to identify the shape.
+
+The machine is already trained on all types of shapes, and when it finds a new shape, it classifies the shape on the bases of a number of sides, and predicts the output.
+
 Regression and Classification algorithms are both Supervised Learning algorithms. Both the algorithms are used for prediction in Machine learning and work with the labeled datasets. But the difference between both is how they are used for different machine learning problems.
+
+<img width="427" alt="Screenshot 2021-11-13 at 13 47 06" src="https://user-images.githubusercontent.com/76846542/141611522-7ba0d150-4210-4fb2-8fae-92ebc62a3252.png">
 
 The main difference between Regression and Classification algorithms that Regression algorithms are used to predict the <i>continuous</i> values such as price, salary, age etc. and Classification algorithms are used to predict/classify the <i>discrete</i> values such as Male or Female, True or False, Spam or Not Spam etc.
 
