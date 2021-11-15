@@ -27,14 +27,15 @@ The importance of machine learning can be easily understood by its uses cases, C
 
 ## Applications of Machine learning
 
-Machine learning is a buzzword for today's technology, and it is growing very rapidly day by day. We are using machine learning in our daily life even without knowing it such as Google Maps, Google assistant, Alexa, etc. Below are some most trending real-world applications of Machine Learning:
+Machine learning is a buzzword for today's technology, and it is growing very rapidly day by day. We are using machine learning in our daily life even without knowing it such as Google Maps, Google assistant, Alexa, etc. Below are some most trending real-world applications of Machine Learning.
 
+<img width="680" alt="Screenshot 2021-11-15 at 11 41 30" src="https://user-images.githubusercontent.com/76846542/141731282-23059a97-f23f-4ec0-a0e7-171539d7ad74.png">
 
 ## Machine learning Life cycle
 
 Machine learning has given the computer systems the abilities to automatically learn without being explicitly programmed. But how does a machine learning system work? So, it can be described using the life cycle of machine learning. Machine learning life cycle is a cyclic process to build an efficient machine learning project. The main purpose of the life cycle is to find a solution to the problem or project.
 
-Machine learning life cycle involves seven major steps, which are given below:
+Machine learning life cycle involves seven major steps, which are given below.
 
     Gathering Data
     Data preparation
@@ -43,6 +44,8 @@ Machine learning life cycle involves seven major steps, which are given below:
     Train the model
     Test the model
     Deployment
+    
+<img width="518" alt="Screenshot 2021-11-15 at 11 42 31" src="https://user-images.githubusercontent.com/76846542/141731414-607ea5ca-a61b-4a47-a5d0-b5185b3a0b8f.png">
 
 The most important thing in the complete process is to understand the problem and to know the purpose of the problem. Therefore, before starting the life cycle, we need to understand the problem because the good result depends on the better understanding of the problem.
 
