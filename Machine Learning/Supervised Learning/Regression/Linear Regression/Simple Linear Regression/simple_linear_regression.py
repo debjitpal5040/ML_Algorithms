@@ -13,7 +13,7 @@ Original file is located at
 
 from sklearn.model_selection import train_test_split # splitting the dataset
 from sklearn.linear_model import LinearRegression # regression algorithm
-from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error, mean_squared_error # accuracy metric
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error, mean_absolute_percentage_error # accuracy metric
 import numpy as np # data processing
 import pandas as pd # data processing 
 import matplotlib.pyplot as plt # data plotting
@@ -32,7 +32,8 @@ y = df.iloc[:, -1].values
 
 """## Visualization of the data"""
 
-plt.figure(figsize=(8, 6),dpi=150)
+plt.figure(figsize=(6, 6), dpi=150)
+plt.style.use('dark_background')
 YearsExperience = df['YearsExperience']
 Salary = df['Salary']
 plt.scatter(YearsExperience,Salary)
@@ -62,7 +63,8 @@ print("The coefficient of determination :", r2_score(y_test,y_pred))
 ### Training Dataset
 """
 
-plt.figure(figsize=(8, 6), dpi=150)
+plt.figure(figsize=(6, 6), dpi=150)
+plt.style.use('dark_background')
 plt.scatter(X_train,y_train,color='red')
 plt.plot(X_train,reg.predict(X_train),color='blue')
 plt.xticks(np.arange(1, 12, 1))
@@ -73,9 +75,10 @@ plt.ylabel('Salary')
 
 """### Test Dataset"""
 
-plt.figure(figsize=(8, 6), dpi=150)
+plt.figure(figsize=(6, 6), dpi=150)
+plt.style.use('dark_background')
 plt.scatter(X_test, y_test, color = 'red')
-plt.plot(X_train, reg.predict(X_train), color = 'blue')
+plt.plot(X_test, reg.predict(X_test), color = 'blue')
 plt.xticks(np.arange(1, 12, 1))
 plt.yticks(np.arange(37000,128000,10000))
 plt.title('Salary vs Experience (Test set)')
@@ -86,4 +89,5 @@ plt.ylabel('Salary')
 
 print('Mean Absolute Error (MAE) :', mean_absolute_error(y_test, y_pred))
 print('Mean Squared Error (MSE) :', mean_squared_error(y_test, y_pred))
-print('Root Mean Squared Error (RMSE) :', np.sqrt(mean_squared_error(y_test, y_pred)))
+print('Root Mean Squared Error (RMSE) :', mean_squared_error(y_test, y_pred, squared=False))
+print('Mean Absolute Percentage Error (MAPE) :', mean_absolute_percentage_error(y_test, y_pred))
