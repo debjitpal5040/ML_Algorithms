@@ -20,3 +20,5 @@ During the development of the ML project, the developers completely rely on the 
 
 - <b>Training dataset
 - Test Dataset</b>
+
+<img width="512" alt="Screenshot 2022-03-03 at 12 28 48" src="https://user-images.githubusercontent.com/76846542/156513092-b3674fc6-4276-4acb-ad43-510b9c7548a0.png">
