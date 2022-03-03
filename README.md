@@ -117,3 +117,28 @@ Testing the model determines the percentage accuracy of the model as per the req
 The last step of machine learning life cycle is deployment, where we deploy the model in the real-world system.
 
 If the above-prepared model is producing an accurate result as per our requirement with acceptable speed, then we deploy the model in the real system. But before deploying the project, we will check whether it is improving its performance using available data or not. The deployment phase is similar to making the final report for a project. 
+
+## Difference between Artificial intelligence and Machine learning
+
+Artificial intelligence and machine learning are the part of computer science that are correlated with each other. These two technologies are the most trending technologies which are used for creating intelligent systems.
+
+Although these are two related technologies and sometimes people use them as a synonym for each other, but still both are the two different terms in various cases.
+On a broad level, we can differentiate both AI and ML as:
+
+- AI is a bigger concept to create intelligent machines that can simulate human thinking capability and behavior, whereas, machine learning is an application or subset of AI that allows machines to learn from data without being programmed explicitly.
+
+## Artificial Intelligence
+
+Artificial intelligence is a field of computer science which makes a computer system that can mimic human intelligence. It is comprised of two words <b>Artificial</b> and <b>intelligence</b>, which means "a human-made thinking power." Hence we can define it as,
+
+- Artificial intelligence is a technology using which we can create intelligent systems that can simulate human intelligence.
+
+The Artificial intelligence system does not require to be pre-programmed, instead of that, they use such algorithms which can work with their own intelligence. It involves machine learning algorithms such as Reinforcement learning algorithm and deep learning neural networks. AI is being used in multiple places such as Siri, Google's AlphaGo, AI in Chess playing, etc.
+
+Based on capabilities, AI can be classified into three types:
+
+- Weak AI
+- General AI
+- Strong AI
+
+Currently, we are working with weak AI and general AI. The future of AI is Strong AI, for which it is said that it will be more intelligent than humans.
