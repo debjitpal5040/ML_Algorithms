@@ -24,10 +24,10 @@ Linear regression can be further divided into two types of the algorithms.
 
 ### Simple Linear Regression
 If a single independent variable is used to predict the value of a numerical dependent variable, then such a Linear Regression algorithm is called Simple Linear Regression.<br>
-Notebook link : https://colab.research.google.com/drive/1zw6DcpTLAW35wxuEsLvNTTqMmJeUDM3i?usp=sharing
+
 ### Multiple Linear regression
 If more than one independent variable is used to predict the value of a numerical dependent variable, then such a Linear Regression algorithm is called Multiple Linear Regression.
-<br> Notebook link : https://colab.research.google.com/drive/1JGhK375g4sQG7aLfd3aN_M3zuaPlIBP0?usp=sharing <br>
+
 ## Finding the best fit line
 
 When working with linear regression, our main goal is to find the best fit line that means the error between predicted values and actual values should be minimized. The best fit line will have the least error.
