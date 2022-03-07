@@ -29,5 +29,5 @@ plt.title("2D Scatter plot with best fit line") #setting title
 p=np.linspace(0,11,100) #creating a list of 100 values
 q=b*p+a #equation of line
 plt.plot(p, q, color="blue") #plotting line
-plt.savefig("Machine Learning/Supervised Learning/Regression/Linear Regression/Simple Linear Regression/simple_linear_regression_manual.png",bbox_inches='tight',dpi=150) #saving the plot
+plt.savefig("Machine Learning/Supervised Learning/Regression/Linear Regression/Simple Linear Regression/Images/simple_linear_regression_manual.png",bbox_inches='tight',dpi=150) #saving the plot
 plt.show()  #showing the graph
