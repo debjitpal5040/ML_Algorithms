@@ -42,4 +42,4 @@ p,q = np.meshgrid(p,q) #creating a meshgrid
 eq = a+b*p+c*q #equation of plane
 ax.plot_surface(p, q, eq, alpha=0.3,color="blue") #plotting plane
 plt.savefig("Machine Learning/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Images/multiple_linear_regression_manual.png",bbox_inches='tight',dpi=150) #saving the plot
-plt.show()
+plt.show() #showing the plot
