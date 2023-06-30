@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
 
 data = pd.read_csv("Machine Learning/Supervised Learning/Regression/Decision Tree Regression/Dataset/IceCreamData.csv")
 class Node():

@@ -1,8 +1,10 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+from matplotlib.markers import MarkerStyle
+
 # read the csv file
-df = pd.read_csv('Machine Learning/Supervised Learning/Regression/Multiple Linear Regression/Startups.csv')
+df = pd.read_csv('Machine Learning/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Startups.csv')
 x = df['Research'].tolist()  # x axis values
 y = df['Marketing'].tolist()  # y axis values
 z = df['Profit'].tolist()  # z axis values
@@ -27,9 +29,10 @@ ans = np.matmul(A_inv, B)  # multiplying A inverse and B
 a = ans[0]  # a value
 b = ans[1]  # b value
 c = ans[2]  # c value
+fig = plt.figure(figsize=(10, 10), dpi=150)
 plt.style.use('dark_background')  # changing the background color
-ax = plt.axes(projection='3d')  # syntax for 3-D projection
-ax.scatter3D(x, y, z, marker='.', color='red')  # plotting points
+ax = fig.add_subplot(111, projection='3d')  # syntax for 3-D projection
+ax.scatter(x, y, z, marker=MarkerStyle('.'), color='red')  # plotting points
 ax.set_xticks(np.arange(15000, 200000, 25000))
 ax.set_yticks(np.arange(25000, 475000, 50000))
 ax.set_zticks(np.arange(60000, 220000, 20000))
@@ -42,5 +45,5 @@ q = np.linspace(25000, 475000, 100)  # creating a list of 100 values
 p, q = np.meshgrid(p, q)  # creating a meshgrid
 eq = a+b*p+c*q  # equation of plane
 ax.plot_surface(p, q, eq, alpha=0.3, color='blue')  # plotting plane
-plt.savefig('Machine Learning/Supervised Learning/Regression/Multiple Linear Regression/Images/Heuristic_Multiple_Linear_Regression.png', bbox_inches='tight', dpi=150)  # saving the plot
+plt.savefig('Machine Learning/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Images/Heuristic_Multiple_Linear_Regression.png', bbox_inches='tight', dpi=150)  # saving the plot
 plt.show()  # showing the plot
