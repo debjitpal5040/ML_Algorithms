@@ -4,7 +4,7 @@ import pandas as pd
 from matplotlib.markers import MarkerStyle
 
 # read the csv file
-df = pd.read_csv('Machine Learning/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Startups.csv')
+df = pd.read_csv('Machine Learning Algorithms/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Startups.csv')
 x = df['Research'].tolist()  # x axis values
 y = df['Marketing'].tolist()  # y axis values
 z = df['Profit'].tolist()  # z axis values
@@ -45,5 +45,5 @@ q = np.linspace(25000, 475000, 100)  # creating a list of 100 values
 p, q = np.meshgrid(p, q)  # creating a meshgrid
 eq = a+b*p+c*q  # equation of plane
 ax.plot_surface(p, q, eq, alpha=0.3, color='blue')  # plotting plane
-plt.savefig('Machine Learning/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Images/Heuristic_Multiple_Linear_Regression.png', bbox_inches='tight', dpi=150)  # saving the plot
+plt.savefig('Machine Learning Algorithms/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Images/Heuristic_Multiple_Linear_Regression.png', bbox_inches='tight', dpi=150)  # saving the plot
 plt.show()  # showing the plot
