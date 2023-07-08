@@ -9,6 +9,8 @@ powertransformer
 quantiletransformer
 kbinsdiscretizer
 functiontransformer
+ExtraTreesRegressor
+ExtraTreesClassifier
 
 `n_jobs` is a common parameter in many machine learning libraries, such as scikit-learn. It is an integer that specifies the maximum number of concurrently running workers. If `1` is given, no joblib parallelism is used at all, which is useful for debugging. If set to `-1`, all CPUs are used. For `n_jobs` below `-1`, `(n_cpus + 1 + n_jobs)` are used. For example, with `n_jobs=-2`, all CPUs but one are used¹.
 
