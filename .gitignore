@@ -1,3 +1,5 @@
 .DS_Store
 .vscode/settings.json
 .ipynb_checkpoints
+.jupyter
+catboost_info
