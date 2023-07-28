@@ -1,4 +1,3 @@
-polynomial regression check correctness
 generalised linear models  :- poisson, gamma, tweedie
 robust regression models :- huber and others
 passive aggresive models
