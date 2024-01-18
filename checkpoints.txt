@@ -1,14 +1,3 @@
-generalised linear models  :- poisson, gamma, tweedie
-robust regression models :- huber and others
-passive aggresive models
-LARS
-lassolars
-TimeSeriesSplit
-powertransformer
-quantiletransformer
-kbinsdiscretizer
-functiontransformer
-
 `n_jobs` is a common parameter in many machine learning libraries, such as scikit-learn. It is an integer that specifies the maximum number of concurrently running workers. If `1` is given, no joblib parallelism is used at all, which is useful for debugging. If set to `-1`, all CPUs are used. For `n_jobs` below `-1`, `(n_cpus + 1 + n_jobs)` are used. For example, with `n_jobs=-2`, all CPUs but one are used¹.
 
 
@@ -55,4 +44,3 @@ GitHub Copilot: `SVC`, `NuSVC`, and `LinearSVC` are all scikit-learn classes tha
 `LinearSVC` is a faster and more memory-efficient implementation of SVMs for linearly separable data. It uses a linear kernel by default, but can also be used with other kernel functions. `LinearSVC` is generally faster than `SVC` and `NuSVC` for large datasets, but can be less accurate for certain types of data.
 
 In summary, `SVC` is the standard SVM implementation in scikit-learn, `NuSVC` is similar to `SVC` but uses a different parameter to control the number of support vectors, and `LinearSVC` is a faster and more memory-efficient implementation of SVMs for linearly separable data.
-
