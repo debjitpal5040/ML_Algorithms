@@ -34,7 +34,7 @@ p = np.linspace(0, 11, 100)  # creating a list of 100 values
 q = b * p + a  # equation of line
 plt.plot(p, q, color="blue")  # plotting line
 plt.savefig(
-    "Machine Learning Algorithms/Supervised Learning/Regression/Linear Regression/Multiple Linear Regression/Images/Heuristic_Multiple_Linear_Regression.png",
+    "Machine Learning Algorithms/Supervised Learning/Regression/Linear Regression/Simple Linear Regression/Images/Heuristic_Simple_Linear_Regression.png",
     bbox_inches="tight",
     dpi=150,
 )  # saving the plot
