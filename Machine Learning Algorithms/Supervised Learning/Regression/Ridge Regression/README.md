@@ -1,1 +1,13 @@
 # Ridge Regression
+
+**Ridge Regression**, also known as **Tikhonov regularization**, is a type of linear regression that includes a regularization term. The regularization term is a penalty term that discourages large coefficients in the model to prevent overfitting. The term is the sum of the squared values of the coefficients, multiplied by a tuning parameter, λ. When λ is zero, ridge regression is equivalent to ordinary least squares regression. As λ increases, the impact of predictor variables on the response variable is shrunk, which can lead to a more stable and interpretable model. However, if λ is too large, the model may become underfit, leading to high bias. Therefore, selecting an appropriate value for λ, often through cross-validation, is a key step in ridge regression. The formula for ridge regression is:
+
+$$\min_{\beta} \left\{ \sum_{i=1}^{n} (y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij})^2 + \lambda \sum_{j=1}^{p} \beta_j^2 \right\}$$
+
+where $y_i$ is the response variable, $\beta_0$ is the intercept, $\beta_j$ are the coefficients, $x_{ij}$ are the predictor variables, and $\lambda$ is the tuning parameter. The first part of the formula is the residual sum of squares, and the second part is the penalty term. The goal is to minimize this equation.
+
+The term "L2" in L2 regularization refers to the **L2 norm** (also known as the Euclidean norm) of the coefficient vector, which is used in the penalty term of the loss function. The L2 norm of a vector is the square root of the sum of the squares of the vector elements. In the context of L2 regularization, however, we typically use the square of the L2 norm, which is simply the sum of the squares of the coefficients.
+
+The regularization term in the loss function for L2 regularization is λ times the square of the L2 norm of the coefficient vector. This has the effect of penalizing large coefficients, which can help to prevent overfitting by discouraging complexity in the model. The λ parameter controls the strength of the regularization: a larger λ results in stronger regularization and a simpler model, while a smaller λ results in weaker regularization and a more complex model.
+
+The reason it's called "L2" regularization is because it uses the "L2" norm (or square of it) in the penalty term. Similarly, "L1" regularization uses the "L1" norm (the sum of the absolute values of the coefficients) in the penalty term. These are two different ways of measuring the size of the coefficients, and they result in different properties in the regularized models. For example, L1 regularization can result in sparse models where some coefficients are exactly zero, while L2 regularization tends to result in models where all coefficients are small but non-zero.
