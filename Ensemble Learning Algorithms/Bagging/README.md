@@ -20,6 +20,18 @@ Bagging, also known as Bootstrap Aggregating, is an ensemble learning technique 
 - By training on different data subsets, each base learner captures slightly different aspects of the data.
 - Averaging the predictions (regression) or using majority vote (classification) helps to reduce the variance of the overall model. This means the final model is less sensitive to small changes in the training data and is more likely to generalize well to unseen data.
 
+**The OOB Trick:**
+
+Left-Out Data: Since each model is trained on a subset of the data, there will be some data points that were not included in that specific model's training set. These are the "out-of-bag" samples for that model.
+
+Validation on the Fly: We can use these out-of-bag samples to test the performance of the model that was trained without them. It's like having a built-in validation set for each model!
+
+**OOB Score:**
+
+The OOB score is calculated by making predictions on each data point using the models that did not see that data point during training.
+Comparing these predictions to the actual labels of the data points.
+Averaging the errors or accuracy across all data points to get an overall OOB score.
+
 **Benefits of Bagging:**
 
 - Improves model performance, especially for models prone to high variance like decision trees.

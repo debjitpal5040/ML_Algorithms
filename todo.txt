@@ -1,0 +1,6 @@
+voting regression and voting classification
+bagging regression and bagging classification
+stacking regression and stacking classification
+adaboost, catboost, xgboost, gradientboost, lightgradientboost
+
+density Estimation methods readme for all
