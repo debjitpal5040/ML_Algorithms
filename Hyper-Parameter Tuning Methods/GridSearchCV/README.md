@@ -1,1 +1,2 @@
 # GridSearchCV
+GridSearchCV is a hyper-parameter tuning method provided by the `sklearn.model_selection` module in the Scikit-learn library. It is used to find the best combination of hyper-parameters for a given machine learning model by exhaustively searching through a specified grid of hyper-parameter values. The main idea behind GridSearchCV is to evaluate the performance of a model for each combination of hyper-parameters and select the combination that yields the best performance based on a specified evaluation metric.
