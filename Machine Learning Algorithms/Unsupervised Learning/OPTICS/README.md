@@ -38,4 +38,4 @@ The OPTICS (Ordering Points To Identify the Clustering Structure) algorithm is a
 * **Parameter Tuning:** The choice of the Eps parameter (k for k-nearest neighbors) can impact the clustering results.
 * **Computational Cost:** OPTICS can be computationally expensive compared to simpler clustering algorithms like K-Means.
 
-**Overall, OPTICS is a powerful unsupervised learning algorithm that excels at identifying clusters of varying densities and shapes in data. It offers a flexible approach to data exploration and cluster discovery without requiring prior knowledge of the number of clusters.**
+**OPTICS is a powerful unsupervised learning algorithm that excels at identifying clusters of varying densities and shapes in data. It offers a flexible approach to data exploration and cluster discovery without requiring prior knowledge of the number of clusters.**

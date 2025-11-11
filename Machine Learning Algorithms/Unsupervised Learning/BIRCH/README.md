@@ -49,4 +49,6 @@ Here's a breakdown of the key aspects:
 *   **Data preprocessing:** Reducing the size of datasets before applying other clustering algorithms.
 *   **Anomaly detection:** Identifying outliers in data.
 
+**Summary:**
+
 In summary, BIRCH is a memory-efficient clustering algorithm suitable for large datasets. Its use of the CF tree allows it to summarize data effectively and perform clustering efficiently. However, it's important to choose appropriate parameter values and be aware of its limitations regarding cluster shapes and data order sensitivity.
